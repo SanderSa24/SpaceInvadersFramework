@@ -11,29 +11,17 @@ using Microsoft.Xna.Framework.Media;
 
 namespace SpaceInvadersFramework
 {
-    public class SpaceInvaders : GameEnvironment
-    {
-        public SpaceInvaders()
-        {
+    public class SpaceInvaders : GameEnvironment{
+        public SpaceInvaders(){
             Content.RootDirectory = "Content";
-
         }
-
-
-        protected override void LoadContent()
-        {
-            
+    protected override void LoadContent(){
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
-
             screen = new Point(800, 600);
             this.SetFullScreen(false);
-
-           
             gameStateManager.AddGameState("PlayingState", new PlayingState());
             gameStateManager.AddGameState("TitleScreenState", new TitleScreenState());
             gameStateManager.SwitchTo("TitleScreenState");
-
         }
     }
 }

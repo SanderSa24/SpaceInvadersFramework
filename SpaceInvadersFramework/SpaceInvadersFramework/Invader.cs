@@ -6,19 +6,13 @@ using Microsoft.Xna.Framework;
 
 namespace SpaceInvadersFramework
 {
-    class Invader : SpriteGameObject
-    {
-        public Invader(String assetName) : base(assetName)
-        {
+    class Invader : SpriteGameObject{
+        public Invader(String assetName) : base(assetName){
             velocity.X = 100;
         }
-
-        public override void Update(GameTime gameTime)
-        {
+        public override void Update(GameTime gameTime){
             base.Update(gameTime);
-            //Boundingbox is een property die een vierkant maakt om de sprite van top-left naar bottom-right
-            if (BoundingBox.Left < 0 || BoundingBox.Right > SpaceInvaders.Screen.X)
-            {
+            if (BoundingBox.Left < 0 || BoundingBox.Right > SpaceInvaders.Screen.X){
                 velocity.X *= -1;
                 position.Y += 32;
             }
