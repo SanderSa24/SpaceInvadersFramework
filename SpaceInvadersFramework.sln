@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceInvadersFramework", "S
 EndProject
 Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "SpaceInvadersFrameworkContent", "SpaceInvadersFramework\SpaceInvadersFrameworkContent\SpaceInvadersFrameworkContent.contentproj", "{8152A63A-1BB0-4D57-8DDA-8B2F71AFC09C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameManagement", "..\GameManagement\GameManagement.csproj", "{6CEB5F37-0BFA-4A0D-8DB7-B25ECD81CAAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,6 +21,10 @@ Global
 		{FF42AEEC-0EEF-4957-90B1-B8B92D90C928}.Release|x86.Build.0 = Release|x86
 		{8152A63A-1BB0-4D57-8DDA-8B2F71AFC09C}.Debug|x86.ActiveCfg = Debug|x86
 		{8152A63A-1BB0-4D57-8DDA-8B2F71AFC09C}.Release|x86.ActiveCfg = Release|x86
+		{6CEB5F37-0BFA-4A0D-8DB7-B25ECD81CAAE}.Debug|x86.ActiveCfg = Debug|x86
+		{6CEB5F37-0BFA-4A0D-8DB7-B25ECD81CAAE}.Debug|x86.Build.0 = Debug|x86
+		{6CEB5F37-0BFA-4A0D-8DB7-B25ECD81CAAE}.Release|x86.ActiveCfg = Release|x86
+		{6CEB5F37-0BFA-4A0D-8DB7-B25ECD81CAAE}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
