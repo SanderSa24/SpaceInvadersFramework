@@ -7,12 +7,14 @@ using System.Text;
 
 namespace SpaceInvadersFramework
 {
-    class Player: SpriteGameObject
+    class Player : SpriteGameObject
     {
-        private PlayingState playingState;
-        public Player(PlayingState playingState): base("ship") {
-
+        
+        public Player(PlayingState playingState)
+            : base("ship")
+        {
         }
+
         public override void HandleInput(InputHelper inputHelper)
         {
             base.HandleInput(inputHelper);
@@ -32,7 +34,7 @@ namespace SpaceInvadersFramework
         {
             base.Update(gameTime);
 
-            
+            //blijft binnen het scherm
             position = Vector2.Clamp(position, Vector2.Zero, new Vector2(SpaceInvaders.Screen.X - Width, SpaceInvaders.Screen.Y));
         }
     }

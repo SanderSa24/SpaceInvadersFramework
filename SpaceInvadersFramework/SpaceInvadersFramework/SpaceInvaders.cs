@@ -31,7 +31,8 @@ namespace SpaceInvadersFramework
 
            
             gameStateManager.AddGameState("PlayingState", new PlayingState());
-           
+            gameStateManager.AddGameState("TitleScreenState", new TitleScreenState());
+            gameStateManager.SwitchTo("TitleScreenState");
 
         }
     }

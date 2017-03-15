@@ -16,7 +16,8 @@ namespace SpaceInvadersFramework
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
-             if (BoundingBox.Left < 0 || BoundingBox.Right > SpaceInvaders.Screen.X)
+            //Boundingbox is een property die een vierkant maakt om de sprite van top-left naar bottom-right
+            if (BoundingBox.Left < 0 || BoundingBox.Right > SpaceInvaders.Screen.X)
             {
                 velocity.X *= -1;
                 position.Y += 32;

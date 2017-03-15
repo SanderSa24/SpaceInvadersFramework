@@ -1,9 +1,9 @@
-﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Input;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 
 namespace SpaceInvadersFramework
 {
@@ -12,7 +12,7 @@ namespace SpaceInvadersFramework
         Player player;
         GameObjectList invaders;
         GameObjectList bullets;
-       // Score score;
+        Score score;
         public PlayingState()
         {
             player = new Player(this);
@@ -24,8 +24,8 @@ namespace SpaceInvadersFramework
             invaders = new GameObjectList();
             bullets = new GameObjectList();
 
-            //score = new Score();
-            //Add(score);
+            score = new Score();
+            Add(score);
             Add(invaders);
             for (int i = 0; i < 9; i++)
             {
@@ -65,7 +65,7 @@ namespace SpaceInvadersFramework
                     {
                         i.Visible = false;
                         b.Visible = false;
-                     //   score.score += 10;
+                        score.score += 10;
                     }
                 }
 
@@ -73,4 +73,3 @@ namespace SpaceInvadersFramework
         }
     }
 }
-
